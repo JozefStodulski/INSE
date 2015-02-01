@@ -21,8 +21,9 @@ public class Project {
     private Pertt pert; //Pertt.class needs to be changed to PERT
     private Ganntt gantt; //Ganntt.class needs to be Gantt
     
-    public Project()
+    public Project(Task task)
     {
+        primaryTask = task;
         wbt = new WBT();
         pert = new Pertt();
         gantt = new Ganntt();
