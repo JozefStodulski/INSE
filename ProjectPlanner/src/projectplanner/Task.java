@@ -29,6 +29,7 @@ public class Task {
         setTaskName(taskName);
         setEST(EST);
         setDuration(duration);
+        components = new ArrayList<Task>();
     }
     
     public void setTaskID(int ID)
