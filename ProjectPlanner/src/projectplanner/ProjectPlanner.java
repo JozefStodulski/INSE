@@ -10,12 +10,18 @@ package projectplanner;
  * @author Samsung
  */
 public class ProjectPlanner {
+    private static Project openProject;
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
         // TODO code application logic here
+    }
+    
+    public static Project getOpenProject()
+    {
+        return openProject;
     }
     
 }

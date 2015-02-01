@@ -15,6 +15,7 @@ public class Project {
     private String projectName;
     private Date startDate;
     private Date completionDate;
+    private Task primaryTask;
     
     private WBT wbt;
     private Pertt pert; //Pertt.class needs to be changed to PERT
@@ -25,5 +26,10 @@ public class Project {
         wbt = new WBT();
         pert = new Pertt();
         gantt = new Ganntt();
+    }
+    
+    public Task getPrimaryTask()
+    {
+        return primaryTask;
     }
 }

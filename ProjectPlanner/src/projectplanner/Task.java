@@ -21,6 +21,7 @@ public class Task {
     private Date LET;
     private int eventID;
     private List<Task> dependancies;
+    private List<Task> components;
     
     public Task(int taskID, String taskName, Date EST, int duration)
     {
@@ -55,8 +56,18 @@ public class Task {
         dependancies.add(dependency);
     }
     
+    public void addComponents(Task task)
+    {
+        components.add(task);
+    }
+    
     public List<Task> getDependencies()
     {
         return dependancies;
+    }
+    
+    public List<Task> getComponents()
+    {
+        return components;
     }
 }
