@@ -24,8 +24,20 @@ public class Project {
     public Project(Task task)
     {
         primaryTask = task;
-        wbt = new WBT();
+    }
+    
+    public void createWBT()
+    {
+    wbt = new WBT();
+    }
+    
+    public void createPert()
+    {
         pert = new Pertt();
+    }
+    
+    public void createGantt()
+    {
         gantt = new Ganntt();
     }
     
