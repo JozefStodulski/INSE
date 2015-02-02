@@ -21,7 +21,8 @@ public class Task {
     private Date LET;
     private int eventID;
     private List<Task> dependancies;
-    private List<Task> components;
+    private List<Task> subtasks;
+    private int width;
     
     public Task(int taskID, String taskName, Date EST, int duration)
     {
@@ -29,7 +30,7 @@ public class Task {
         setTaskName(taskName);
         setEST(EST);
         setDuration(duration);
-        components = new ArrayList<Task>();
+        subtasks = new ArrayList<Task>();
     }
     
     public void setTaskID(int ID)
@@ -59,7 +60,7 @@ public class Task {
     
     public void addComponents(Task task)
     {
-        components.add(task);
+        subtasks.add(task);
     }
     
     public List<Task> getDependencies()
@@ -67,8 +68,30 @@ public class Task {
         return dependancies;
     }
     
-    public List<Task> getComponents()
+    public List<Task> getSubtasks()
     {
-        return components;
+        return subtasks;
+    }
+    
+    public int getWidth()
+    {
+        width = 0;
+        updateWidth(this);
+        return width;
+    }
+    
+    public void updateWidth(Task node)
+    {
+        if (node.getSubtasks().isEmpty())
+        {
+            width = width + 1;
+        } 
+        else
+        {
+            for (Task nodes : node.getSubtasks())
+            {
+                updateWidth(nodes);
+            }
+        }
     }
 }
