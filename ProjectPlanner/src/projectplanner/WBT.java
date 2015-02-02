@@ -25,13 +25,13 @@ public class WBT {
     
     public void updateLeaves(Task node)
     {
-        if (node.getComponents().isEmpty())
+        if (node.getSubtasks().isEmpty())
         {
             leaves.add(node);
         } 
         else
         {
-            for (Task nodes : node.getComponents())
+            for (Task nodes : node.getSubtasks())
             {
                 updateLeaves(nodes);
             }
