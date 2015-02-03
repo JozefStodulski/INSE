@@ -23,7 +23,7 @@ public class WBT {
         return leaves;
     }
     
-    public void updateLeaves(Task node)
+    private void updateLeaves(Task node)
     {
         if (node.getSubtasks().isEmpty())
         {

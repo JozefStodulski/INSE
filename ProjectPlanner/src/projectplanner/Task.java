@@ -75,23 +75,23 @@ public class Task {
     
     public int getWidth()
     {
-        width = 0;
-        updateWidth(this);
+        width = updateWidth(this);
         return width;
     }
     
-    public void updateWidth(Task node)
+    private int updateWidth(Task node)
     {
         if (node.getSubtasks().isEmpty())
         {
-            width = width + 1;
+            return 1;
         } 
         else
         {
             for (Task nodes : node.getSubtasks())
             {
-                updateWidth(nodes);
+                width = width + updateWidth(nodes);
             }
+            return width;
         }
     }
 }
