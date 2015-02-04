@@ -17,6 +17,9 @@ public class ProjectPlanner {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        UserFront screen = new UserFront();
+        screen.setVisible(true);
+        
     }
     
     public static Project getOpenProject()
