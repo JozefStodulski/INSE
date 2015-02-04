@@ -14,6 +14,11 @@ public class UserFront extends javax.swing.JFrame {
     public UserFront() {
         initComponents();
     }
+    
+    
+    
+    
+            
      /**
      * This method is called from within the constructor to  the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -611,5 +616,25 @@ public class UserFront extends javax.swing.JFrame {
     private java.awt.Label label2;
     private java.awt.Label label4;
     // End of variables declaration//GEN-END:variables
+    
+    private void clearFields() {
+        jTextField3.setText("");
+        jTextField4.setText("");
+        jTextField5.setText("");
+        jTextField6.setText("");
+        jTextField7.setText("");
+         jComboBox8.setSelectedIndex(0);
+          jComboBox9.setSelectedIndex(0);
+        jComboBox10.setSelectedIndex(0);
+        jComboBox11.setSelectedIndex(0);
+        jComboBox12.setSelectedIndex(0);
+        jComboBox13.setSelectedIndex(0);
+        jComboBox14.setSelectedIndex(0);
+        jComboBox15.setSelectedIndex(0);
+    }
+    
+    private void jButton5Performed(java.awt.event.ActionEvent evt) {
+        clearFields();
+    }
 }
 
