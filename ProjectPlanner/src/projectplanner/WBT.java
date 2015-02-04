@@ -16,6 +16,9 @@ public class WBT {
     public WBT()
     {}
     
+    /**
+     * @return All the micro-tasks at the bottom of the WBT
+     */
     public List<Task> getLeaves()
     {
         leaves.clear();
