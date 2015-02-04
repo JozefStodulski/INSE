@@ -10,5 +10,8 @@ package projectplanner;
  * @author Samsung
  */
 public class Pertt {
-    System.out.println("rdtjrtyjtjk");
+    public int getFloatTime()
+    {
+        // return project.getMaxDuration() - project.getMinDuration();
+    }
 }
