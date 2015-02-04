@@ -11,12 +11,11 @@ import java.util.Date;
  * @author jozefstodulski
  */
 public class Project {
-    private int projectID;
+    private int projectID, totalDuration;
     private String projectName;
     private Date startDate;
     private Date completionDate;
     private Task primaryTask;
-    
     private WBT wbt;
     private Pert pert; //Pertt.class needs to be changed to PERT
     private Ganntt gantt; //Ganntt.class needs to be Gantt
@@ -28,7 +27,7 @@ public class Project {
     
     public void createWBT()
     {
-    wbt = new WBT();
+        wbt = new WBT();
     }
     
     public void createPert()
@@ -44,5 +43,9 @@ public class Project {
     public Task getPrimaryTask()
     {
         return primaryTask;
+    }
+    public int getTotalDuration()
+    {
+        return totalDuration;
     }
 }
