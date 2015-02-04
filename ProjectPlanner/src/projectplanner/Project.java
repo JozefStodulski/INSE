@@ -18,7 +18,7 @@ public class Project {
     private Task primaryTask;
     
     private WBT wbt;
-    private Pertt pert; //Pertt.class needs to be changed to PERT
+    private Pert pert; //Pertt.class needs to be changed to PERT
     private Ganntt gantt; //Ganntt.class needs to be Gantt
     
     public Project(Task task)
@@ -33,7 +33,7 @@ public class Project {
     
     public void createPert()
     {
-        pert = new Pertt();
+        pert = new Pert();
     }
     
     public void createGantt()
