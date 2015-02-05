@@ -98,4 +98,8 @@ public class Task {
             return width;
         }
     }
+    public String getName()
+    {
+        return taskName;
+    }
 }

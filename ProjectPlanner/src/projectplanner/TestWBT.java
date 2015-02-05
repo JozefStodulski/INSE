@@ -43,6 +43,9 @@ public class TestWBT {
         
         testProj.createWBT();
         
-        System.out.println(testProj.getWBT());
+        for (Task task : testProj.getWBT().getLeaves(testProj.getPrimaryTask()))
+        {
+            System.out.println(task.getName());
+        }
     }
 }
