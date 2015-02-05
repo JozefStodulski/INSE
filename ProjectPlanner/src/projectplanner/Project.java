@@ -40,6 +40,11 @@ public class Project {
         gantt = new Ganntt();
     }
     
+    public WBT getWBT()
+    {
+        return wbt;
+    }
+    
     public Task getPrimaryTask()
     {
         return primaryTask;
@@ -53,5 +58,10 @@ public class Project {
     public int getMinDuration()
     {
         return 4; //TEMPORARY
+    }
+    
+    private void setPrimaryTask(Task task)
+    {
+        primaryTask = task;
     }
 }

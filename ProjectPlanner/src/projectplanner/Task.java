@@ -4,7 +4,6 @@
  * and open the template in the editor.
  */
 package projectplanner;
-import java.util.Date;
 import java.util.*;
 /**
  *
@@ -58,7 +57,7 @@ public class Task {
         dependancies.add(dependency);
     }
     
-    public void addComponents(Task task)
+    public void addSubtask(Task task)
     {
         subtasks.add(task);
     }

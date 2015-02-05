@@ -19,10 +19,10 @@ public class WBT {
     /**
      * @return All the micro-tasks at the bottom of the WBT
      */
-    public List<Task> getLeaves()
+    public List<Task> getLeaves(Task primaryTask)
     {
         leaves.clear();
-        updateLeaves(ProjectPlanner.getOpenProject().getPrimaryTask());
+        updateLeaves(primaryTask);
         return leaves;
     }
     
