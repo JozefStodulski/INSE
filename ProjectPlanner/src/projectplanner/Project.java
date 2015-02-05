@@ -44,8 +44,14 @@ public class Project {
     {
         return primaryTask;
     }
+    
     public int getTotalDuration()
     {
         return totalDuration;
+    }
+    
+    public int getMinDuration()
+    {
+        return 4; //TEMPORARY
     }
 }

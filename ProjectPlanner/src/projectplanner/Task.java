@@ -73,6 +73,11 @@ public class Task {
         return subtasks;
     }
     
+    public int getMinDiration()
+    {
+        return 4; //TEMPORARY
+    }
+    
     public int getWidth()
     {
         width = updateWidth(this);

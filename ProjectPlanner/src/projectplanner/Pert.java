@@ -12,6 +12,6 @@ package projectplanner;
 public class Pert {
     public int getFloatTime()
     {
-        return ProjectPlanner.getOpenProject().getTotlDuration() -ProjectPlanner.getOpenProject().getMinDuration();
+        return ProjectPlanner.getOpenProject().getTotalDuration() -ProjectPlanner.getOpenProject().getMinDuration();
     }
 }
