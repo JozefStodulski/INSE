@@ -34,7 +34,7 @@ public class Task {
     
     public void setTaskID(int ID)
     {
-        taskID = GUI.txtTaskID.;
+        taskID = ID;
     }
     
     public void setTaskName(String name)

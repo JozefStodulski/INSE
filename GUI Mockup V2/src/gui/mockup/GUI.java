@@ -525,15 +525,7 @@ public class GUI extends javax.swing.JFrame {
         
     }//GEN-LAST:event_btnAddTaskActionPerformed
 
-    private String TaskNameGetter(string name)
-    {
-        
-        return txtTaskName;
-    }
-    
-    
-    
-    
+
     
     /**
      * @param args the command line arguments
