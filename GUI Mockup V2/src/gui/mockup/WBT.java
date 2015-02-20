@@ -18,7 +18,8 @@ public class WBT {
     {}
     
     /**
-     * @return All the micro-tasks at the bottom of the WBT
+     * @return leaves       All the micro-tasks at the bottom of the WBT
+     * @param primaryTask  Node whose descended leaves are requested
      */
     public List<Task> getLeaves(Task primaryTask)
     {
