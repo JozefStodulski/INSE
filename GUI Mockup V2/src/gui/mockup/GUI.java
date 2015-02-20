@@ -33,29 +33,29 @@ public class GUI extends javax.swing.JFrame {
         jPanel6 = new javax.swing.JPanel();
         label4 = new java.awt.Label();
         jLabel10 = new javax.swing.JLabel();
-        jTextField3 = new javax.swing.JTextField();
+        txtTaskName = new javax.swing.JTextField();
         jLabel12 = new javax.swing.JLabel();
         jLabel13 = new javax.swing.JLabel();
         jLabel14 = new javax.swing.JLabel();
         jLabel15 = new javax.swing.JLabel();
-        jComboBox8 = new javax.swing.JComboBox();
-        jComboBox9 = new javax.swing.JComboBox();
-        jComboBox10 = new javax.swing.JComboBox();
-        jComboBox11 = new javax.swing.JComboBox();
-        jComboBox12 = new javax.swing.JComboBox();
-        jComboBox13 = new javax.swing.JComboBox();
+        cmbStartYear = new javax.swing.JComboBox();
+        cmbEndYear = new javax.swing.JComboBox();
+        cmbEndMonth = new javax.swing.JComboBox();
+        cmbStartMonth = new javax.swing.JComboBox();
+        cmbStartDay = new javax.swing.JComboBox();
+        cmbEndDay = new javax.swing.JComboBox();
         jLabel16 = new javax.swing.JLabel();
         jLabel17 = new javax.swing.JLabel();
         jLabel18 = new javax.swing.JLabel();
-        jTextField5 = new javax.swing.JTextField();
+        txtDescription = new javax.swing.JTextField();
         jLabel11 = new javax.swing.JLabel();
-        jComboBox14 = new javax.swing.JComboBox();
-        jButton5 = new javax.swing.JButton();
-        jButton6 = new javax.swing.JButton();
+        cmbColour = new javax.swing.JComboBox();
+        btnAddTask = new javax.swing.JButton();
+        btnClear = new javax.swing.JButton();
         jLabel19 = new javax.swing.JLabel();
-        jTextField4 = new javax.swing.JTextField();
+        txtTaskID = new javax.swing.JTextField();
         jLabel20 = new javax.swing.JLabel();
-        jTextField6 = new javax.swing.JTextField();
+        txtDuration = new javax.swing.JTextField();
         jLabel1 = new javax.swing.JLabel();
         jTextField7 = new javax.swing.JTextField();
         jLabel2 = new javax.swing.JLabel();
@@ -63,13 +63,12 @@ public class GUI extends javax.swing.JFrame {
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
-        jButton9 = new javax.swing.JButton();
-        jButton10 = new javax.swing.JButton();
+        btnEditTask = new javax.swing.JButton();
+        btnRestart = new javax.swing.JButton();
         jSeparator1 = new javax.swing.JSeparator();
         jSeparator3 = new javax.swing.JSeparator();
         jLabel8 = new javax.swing.JLabel();
-        jComboBox15 = new javax.swing.JComboBox();
-        jLabel3 = new javax.swing.JLabel();
+        cmbChartType = new javax.swing.JComboBox();
         jPanel3 = new javax.swing.JPanel();
         label2 = new java.awt.Label();
         jPanel4 = new javax.swing.JPanel();
@@ -93,7 +92,7 @@ public class GUI extends javax.swing.JFrame {
 
         jLabel10.setText("Task Name:");
 
-        jTextField3.setToolTipText("Input an appropriate name for the task.");
+        txtTaskName.setToolTipText("Input an appropriate name for the task.");
 
         jLabel12.setText("/");
 
@@ -103,51 +102,51 @@ public class GUI extends javax.swing.JFrame {
 
         jLabel15.setText("/");
 
-        jComboBox8.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        jComboBox8.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Year", "2000", "2001", "2002", "2003", "2004", "2005", "2006", "2007", "2008", "2009", "2010", "2011", "2012", "2013", "2014", "2015", "2016", "2017", "2018", "2019", "2020", "2021", "2022", "2023", "2024", "2025", "2026", "2027", "2028", "2029", "2030", "2031", "2032", "2033", "2034", "2035", "2036", "2037", "2038", "2039", "2040", "2041", "2042", "2043", "2044", "2045", "2046", "2047", "2048", "2049", "2050", "2051", "2052", "2053", "2054", "2055", "2056", "2057", "2058", "2059", "2060", "2061", "2062", "2063", "2064", "2065", "2066", "2067", "2068", "2069", "2070", "2071", "2072", "2073", "2074", "2075", "2076", "2077", "2078", "2079", "2080", "2081", "2082", "2083", "2084", "2085", "2086", "2087", "2088", "2089", "2090", "2091", "2092", "2093", "2094", "2095", "2096", "2097", "2098", "2099", "2100" }));
-        jComboBox8.addActionListener(new java.awt.event.ActionListener() {
+        cmbStartYear.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        cmbStartYear.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Year", "2000", "2001", "2002", "2003", "2004", "2005", "2006", "2007", "2008", "2009", "2010", "2011", "2012", "2013", "2014", "2015", "2016", "2017", "2018", "2019", "2020", "2021", "2022", "2023", "2024", "2025", "2026", "2027", "2028", "2029", "2030", "2031", "2032", "2033", "2034", "2035", "2036", "2037", "2038", "2039", "2040", "2041", "2042", "2043", "2044", "2045", "2046", "2047", "2048", "2049", "2050", "2051", "2052", "2053", "2054", "2055", "2056", "2057", "2058", "2059", "2060", "2061", "2062", "2063", "2064", "2065", "2066", "2067", "2068", "2069", "2070", "2071", "2072", "2073", "2074", "2075", "2076", "2077", "2078", "2079", "2080", "2081", "2082", "2083", "2084", "2085", "2086", "2087", "2088", "2089", "2090", "2091", "2092", "2093", "2094", "2095", "2096", "2097", "2098", "2099", "2100" }));
+        cmbStartYear.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jComboBox8ActionPerformed(evt);
+                cmbStartYearActionPerformed(evt);
             }
         });
 
-        jComboBox9.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        jComboBox9.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Year", "2000", "2001", "2002", "2003", "2004", "2005", "2006", "2007", "2008", "2009", "2010", "2011", "2012", "2013", "2014", "2015", "2016", "2017", "2018", "2019", "2020", "2021", "2022", "2023", "2024", "2025", "2026", "2027", "2028", "2029", "2030", "2031", "2032", "2033", "2034", "2035", "2036", "2037", "2038", "2039", "2040", "2041", "2042", "2043", "2044", "2045", "2046", "2047", "2048", "2049", "2050", "2051", "2052", "2053", "2054", "2055", "2056", "2057", "2058", "2059", "2060", "2061", "2062", "2063", "2064", "2065", "2066", "2067", "2068", "2069", "2070", "2071", "2072", "2073", "2074", "2075", "2076", "2077", "2078", "2079", "2080", "2081", "2082", "2083", "2084", "2085", "2086", "2087", "2088", "2089", "2090", "2091", "2092", "2093", "2094", "2095", "2096", "2097", "2098", "2099", "2100" }));
-        jComboBox9.addActionListener(new java.awt.event.ActionListener() {
+        cmbEndYear.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        cmbEndYear.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Year", "2000", "2001", "2002", "2003", "2004", "2005", "2006", "2007", "2008", "2009", "2010", "2011", "2012", "2013", "2014", "2015", "2016", "2017", "2018", "2019", "2020", "2021", "2022", "2023", "2024", "2025", "2026", "2027", "2028", "2029", "2030", "2031", "2032", "2033", "2034", "2035", "2036", "2037", "2038", "2039", "2040", "2041", "2042", "2043", "2044", "2045", "2046", "2047", "2048", "2049", "2050", "2051", "2052", "2053", "2054", "2055", "2056", "2057", "2058", "2059", "2060", "2061", "2062", "2063", "2064", "2065", "2066", "2067", "2068", "2069", "2070", "2071", "2072", "2073", "2074", "2075", "2076", "2077", "2078", "2079", "2080", "2081", "2082", "2083", "2084", "2085", "2086", "2087", "2088", "2089", "2090", "2091", "2092", "2093", "2094", "2095", "2096", "2097", "2098", "2099", "2100" }));
+        cmbEndYear.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jComboBox9ActionPerformed(evt);
+                cmbEndYearActionPerformed(evt);
             }
         });
 
-        jComboBox10.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        jComboBox10.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Month", "January", "February", "March", "April", "May", "June", "July", "August", "September", "November", "December" }));
-        jComboBox10.addActionListener(new java.awt.event.ActionListener() {
+        cmbEndMonth.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        cmbEndMonth.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Month", "January", "February", "March", "April", "May", "June", "July", "August", "September", "November", "December" }));
+        cmbEndMonth.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jComboBox10ActionPerformed(evt);
+                cmbEndMonthActionPerformed(evt);
             }
         });
 
-        jComboBox11.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        jComboBox11.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Month", "January", "February", "March", "April", "May", "June", "July", "August", "September", "November", "December" }));
-        jComboBox11.addActionListener(new java.awt.event.ActionListener() {
+        cmbStartMonth.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        cmbStartMonth.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Month", "January", "February", "March", "April", "May", "June", "July", "August", "September", "November", "December" }));
+        cmbStartMonth.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jComboBox11ActionPerformed(evt);
+                cmbStartMonthActionPerformed(evt);
             }
         });
 
-        jComboBox12.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        jComboBox12.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Day", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31" }));
-        jComboBox12.addActionListener(new java.awt.event.ActionListener() {
+        cmbStartDay.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        cmbStartDay.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Day", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31" }));
+        cmbStartDay.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jComboBox12ActionPerformed(evt);
+                cmbStartDayActionPerformed(evt);
             }
         });
 
-        jComboBox13.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        jComboBox13.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Day", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31" }));
-        jComboBox13.addActionListener(new java.awt.event.ActionListener() {
+        cmbEndDay.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        cmbEndDay.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Day", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31" }));
+        cmbEndDay.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jComboBox13ActionPerformed(evt);
+                cmbEndDayActionPerformed(evt);
             }
         });
 
@@ -157,29 +156,29 @@ public class GUI extends javax.swing.JFrame {
 
         jLabel18.setText("Description:");
 
-        jTextField5.setToolTipText("Input a brief description of the task.");
+        txtDescription.setToolTipText("Input a brief description of the task.");
 
         jLabel11.setText("Colour:");
 
-        jComboBox14.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        jComboBox14.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Please Select a Colour", "Black", "Grey", "White", "Red", "Blue", "Yellow", "Purple", "Green", "Orange" }));
+        cmbColour.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        cmbColour.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Please Select a Colour", "Black", "Grey", "White", "Red", "Blue", "Yellow", "Purple", "Green", "Orange" }));
 
-        jButton5.setText("Add Task");
-        jButton5.addActionListener(new java.awt.event.ActionListener() {
+        btnAddTask.setText("Add Task");
+        btnAddTask.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton5ActionPerformed(evt);
+                btnAddTaskActionPerformed(evt);
             }
         });
 
-        jButton6.setText("Clear");
+        btnClear.setText("Clear");
 
         jLabel19.setText("Task ID:");
 
-        jTextField4.setToolTipText("Enter a positive number. An integer (e.g. 1) is a main task. Adding a decimal place followed by another number will set this task as a sub-task. For example, task 1.2 is a sub-task of task 1, and task 1.1.2 is a sub-task of task 1.1");
+        txtTaskID.setToolTipText("Enter a positive number. An integer (e.g. 1) is a main task. Adding a decimal place followed by another number will set this task as a sub-task. For example, task 1.2 is a sub-task of task 1, and task 1.1.2 is a sub-task of task 1.1");
 
         jLabel20.setText("Duration (days):");
 
-        jTextField6.setToolTipText("The estimated length of the task in days. Input an integer between 1 and 36525.");
+        txtDuration.setToolTipText("The estimated length of the task in days. Input an integer between 1 and 36525.");
 
         jLabel1.setText("Dependencies:");
 
@@ -200,9 +199,9 @@ public class GUI extends javax.swing.JFrame {
         jLabel7.setFont(new java.awt.Font("Tahoma", 2, 11)); // NOI18N
         jLabel7.setText("E.g. 1.1.1, 1.1.2");
 
-        jButton9.setText("Edit Tasks");
+        btnEditTask.setText("Edit Tasks");
 
-        jButton10.setText("Restart");
+        btnRestart.setText("Restart");
 
         javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
         jPanel6.setLayout(jPanel6Layout);
@@ -227,43 +226,43 @@ public class GUI extends javax.swing.JFrame {
                             .addComponent(jLabel1, javax.swing.GroupLayout.Alignment.TRAILING))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jTextField6)
-                            .addComponent(jTextField4)
+                            .addComponent(txtDuration)
+                            .addComponent(txtTaskID)
                             .addComponent(jTextField7)
-                            .addComponent(jTextField5)
-                            .addComponent(jTextField3)
+                            .addComponent(txtDescription)
+                            .addComponent(txtTaskName)
                             .addGroup(jPanel6Layout.createSequentialGroup()
                                 .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(jPanel6Layout.createSequentialGroup()
-                                        .addComponent(jComboBox12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(cmbStartDay, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                         .addComponent(jLabel13)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(jComboBox11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(cmbStartMonth, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                         .addComponent(jLabel14)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(jComboBox8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addComponent(cmbStartYear, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                                     .addGroup(jPanel6Layout.createSequentialGroup()
-                                        .addComponent(jComboBox13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(cmbEndDay, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                         .addComponent(jLabel12)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(jComboBox10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(cmbEndMonth, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                         .addComponent(jLabel15)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(jComboBox9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addComponent(jComboBox14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addComponent(cmbEndYear, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addComponent(cmbColour, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addGap(0, 13, Short.MAX_VALUE))
                             .addGroup(jPanel6Layout.createSequentialGroup()
                                 .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jButton6, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jButton10, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addComponent(btnClear, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(btnRestart, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                 .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jButton5, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jButton9, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                                    .addComponent(btnAddTask, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(btnEditTask, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE))))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -277,7 +276,7 @@ public class GUI extends javax.swing.JFrame {
                 .addComponent(jSeparator3, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 448, Short.MAX_VALUE))
         );
 
-        jPanel6Layout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {jButton10, jButton5, jButton6, jButton9});
+        jPanel6Layout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {btnAddTask, btnClear, btnEditTask, btnRestart});
 
         jPanel6Layout.setVerticalGroup(
             jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -288,43 +287,43 @@ public class GUI extends javax.swing.JFrame {
                     .addGroup(jPanel6Layout.createSequentialGroup()
                         .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel19)
-                            .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(txtTaskID, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabel2))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel10)
-                            .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(txtTaskName, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabel4)))
                     .addGroup(jPanel6Layout.createSequentialGroup()
                         .addGap(64, 64, 64)
                         .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jComboBox12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jComboBox11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jComboBox8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(cmbStartDay, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(cmbStartMonth, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(cmbStartYear, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabel13)
                             .addComponent(jLabel14)
                             .addComponent(jLabel17))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jComboBox13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jComboBox10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jComboBox9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(cmbEndDay, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(cmbEndMonth, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(cmbEndYear, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabel12)
                             .addComponent(jLabel15)
                             .addComponent(jLabel16))))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTextField6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtDuration, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel20)
                     .addComponent(jLabel5))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTextField5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtDescription, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel18)
                     .addComponent(jLabel6))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jComboBox14)
+                    .addComponent(cmbColour)
                     .addComponent(jLabel11))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -334,15 +333,15 @@ public class GUI extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel6Layout.createSequentialGroup()
-                        .addComponent(jButton6)
+                        .addComponent(btnClear)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 2, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
-                        .addComponent(jButton10))
+                        .addComponent(btnRestart))
                     .addGroup(jPanel6Layout.createSequentialGroup()
-                        .addComponent(jButton5)
+                        .addComponent(btnAddTask)
                         .addGap(26, 26, 26)
-                        .addComponent(jButton9)))
+                        .addComponent(btnEditTask)))
                 .addGap(17, 17, 17))
             .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel6Layout.createSequentialGroup()
@@ -351,16 +350,16 @@ public class GUI extends javax.swing.JFrame {
                     .addGap(48, 48, 48)))
         );
 
-        jPanel6Layout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {jTextField3, jTextField5});
+        jPanel6Layout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {txtDescription, txtTaskName});
 
         jPanel6Layout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {jLabel10, jLabel11, jLabel16, jLabel17, jLabel18, jLabel19, jLabel20});
 
-        jPanel6Layout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {jButton10, jButton5, jButton6, jButton9});
+        jPanel6Layout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {btnAddTask, btnClear, btnEditTask, btnRestart});
 
         jLabel8.setText("Chart Type:");
 
-        jComboBox15.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        jComboBox15.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Please Select a Chart Type", "Gantt", "PERT", "WBT" }));
+        cmbChartType.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        cmbChartType.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Please Select a Chart Type", "Gantt", "PERT", "WBT" }));
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -370,7 +369,7 @@ public class GUI extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabel8)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jComboBox15, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(cmbChartType, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(139, 139, 139))
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addContainerGap()
@@ -383,13 +382,11 @@ public class GUI extends javax.swing.JFrame {
                 .addGap(22, 22, 22)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel8)
-                    .addComponent(jComboBox15, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(cmbChartType, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jPanel6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addContainerGap())
         );
-
-        jLabel3.setText("jLabel3");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -403,11 +400,6 @@ public class GUI extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addContainerGap())
-            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(jPanel1Layout.createSequentialGroup()
-                    .addGap(0, 230, Short.MAX_VALUE)
-                    .addComponent(jLabel3)
-                    .addGap(0, 230, Short.MAX_VALUE)))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -417,11 +409,6 @@ public class GUI extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addContainerGap())
-            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(jPanel1Layout.createSequentialGroup()
-                    .addGap(0, 0, Short.MAX_VALUE)
-                    .addComponent(jLabel3)
-                    .addGap(0, 0, Short.MAX_VALUE)))
         );
 
         jPanel3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 3));
@@ -458,7 +445,7 @@ public class GUI extends javax.swing.JFrame {
         jPanel3Layout.setHorizontalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap(156, Short.MAX_VALUE)
                 .addComponent(label2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(150, 150, 150))
             .addGroup(jPanel3Layout.createSequentialGroup()
@@ -484,7 +471,7 @@ public class GUI extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, 499, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -500,34 +487,54 @@ public class GUI extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jComboBox8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox8ActionPerformed
+    private void cmbStartYearActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmbStartYearActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jComboBox8ActionPerformed
+    }//GEN-LAST:event_cmbStartYearActionPerformed
 
-    private void jComboBox9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox9ActionPerformed
+    private void cmbEndYearActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmbEndYearActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jComboBox9ActionPerformed
+    }//GEN-LAST:event_cmbEndYearActionPerformed
 
-    private void jComboBox10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox10ActionPerformed
+    private void cmbEndMonthActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmbEndMonthActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jComboBox10ActionPerformed
+    }//GEN-LAST:event_cmbEndMonthActionPerformed
 
-    private void jComboBox11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox11ActionPerformed
+    private void cmbStartMonthActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmbStartMonthActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jComboBox11ActionPerformed
+    }//GEN-LAST:event_cmbStartMonthActionPerformed
 
-    private void jComboBox12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox12ActionPerformed
+    private void cmbStartDayActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmbStartDayActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jComboBox12ActionPerformed
+    }//GEN-LAST:event_cmbStartDayActionPerformed
 
-    private void jComboBox13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox13ActionPerformed
+    private void cmbEndDayActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmbEndDayActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jComboBox13ActionPerformed
+    }//GEN-LAST:event_cmbEndDayActionPerformed
 
-    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton5ActionPerformed
+    private void btnAddTaskActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAddTaskActionPerformed
+      
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    }//GEN-LAST:event_btnAddTaskActionPerformed
 
+    private String TaskNameGetter(string name)
+    {
+        
+        return txtTaskName;
+    }
+    
+    
+    
+    
+    
     /**
      * @param args the command line arguments
      */
@@ -564,19 +571,19 @@ public class GUI extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnAddTask;
+    private javax.swing.JButton btnClear;
+    private javax.swing.JButton btnEditTask;
+    private javax.swing.JButton btnRestart;
     private java.awt.Canvas canvas1;
-    private javax.swing.JButton jButton10;
-    private javax.swing.JButton jButton5;
-    private javax.swing.JButton jButton6;
-    private javax.swing.JButton jButton9;
-    private javax.swing.JComboBox jComboBox10;
-    private javax.swing.JComboBox jComboBox11;
-    private javax.swing.JComboBox jComboBox12;
-    private javax.swing.JComboBox jComboBox13;
-    private javax.swing.JComboBox jComboBox14;
-    private javax.swing.JComboBox jComboBox15;
-    private javax.swing.JComboBox jComboBox8;
-    private javax.swing.JComboBox jComboBox9;
+    private javax.swing.JComboBox cmbChartType;
+    private javax.swing.JComboBox cmbColour;
+    private javax.swing.JComboBox cmbEndDay;
+    private javax.swing.JComboBox cmbEndMonth;
+    private javax.swing.JComboBox cmbEndYear;
+    private javax.swing.JComboBox cmbStartDay;
+    private javax.swing.JComboBox cmbStartMonth;
+    private javax.swing.JComboBox cmbStartYear;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -590,7 +597,6 @@ public class GUI extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel20;
-    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
@@ -600,19 +606,16 @@ public class GUI extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
-    private javax.swing.JPanel jPanel5;
     private javax.swing.JPanel jPanel6;
-    private javax.swing.JPanel jPanel7;
-    private javax.swing.JPanel jPanel8;
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JSeparator jSeparator3;
-    private javax.swing.JTextField jTextField3;
-    private javax.swing.JTextField jTextField4;
-    private javax.swing.JTextField jTextField5;
-    private javax.swing.JTextField jTextField6;
     private javax.swing.JTextField jTextField7;
     private java.awt.Label label1;
     private java.awt.Label label2;
     private java.awt.Label label4;
+    private javax.swing.JTextField txtDescription;
+    private javax.swing.JTextField txtDuration;
+    private javax.swing.JTextField txtTaskID;
+    private javax.swing.JTextField txtTaskName;
     // End of variables declaration//GEN-END:variables
 }

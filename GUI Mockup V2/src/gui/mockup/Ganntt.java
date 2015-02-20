@@ -3,12 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package projectplanner;
+package gui.mockup;
 
 /**
  *
  * @author Samsung
  */
-public interface UserInterface {
+public class Ganntt {
     
 }

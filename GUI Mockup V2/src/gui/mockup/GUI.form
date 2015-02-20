@@ -27,7 +27,7 @@
               <EmptySpace max="-2" attributes="0"/>
               <Component id="jPanel1" min="-2" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
-              <Component id="jPanel3" min="-2" pref="499" max="-2" attributes="0"/>
+              <Component id="jPanel3" min="-2" max="-2" attributes="0"/>
               <EmptySpace max="32767" attributes="0"/>
           </Group>
       </Group>
@@ -68,13 +68,6 @@
                   <Component id="jPanel2" max="32767" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
               </Group>
-              <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
-                  <Group type="102" attributes="0">
-                      <EmptySpace min="0" pref="230" max="32767" attributes="0"/>
-                      <Component id="jLabel3" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace min="0" pref="230" max="32767" attributes="0"/>
-                  </Group>
-              </Group>
           </Group>
         </DimensionLayout>
         <DimensionLayout dim="1">
@@ -85,13 +78,6 @@
                   <EmptySpace max="-2" attributes="0"/>
                   <Component id="jPanel2" max="32767" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
-              </Group>
-              <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
-                  <Group type="102" attributes="0">
-                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-                      <Component id="jLabel3" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-                  </Group>
               </Group>
           </Group>
         </DimensionLayout>
@@ -122,7 +108,7 @@
                       <EmptySpace max="32767" attributes="0"/>
                       <Component id="jLabel8" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jComboBox15" min="-2" max="-2" attributes="0"/>
+                      <Component id="cmbChartType" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="139" max="-2" attributes="0"/>
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
@@ -138,7 +124,7 @@
                       <EmptySpace min="-2" pref="22" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="jLabel8" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jComboBox15" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="cmbChartType" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
                       <Component id="jPanel6" max="32767" attributes="0"/>
@@ -181,48 +167,48 @@
                                   </Group>
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="jTextField6" alignment="0" max="32767" attributes="0"/>
-                                      <Component id="jTextField4" alignment="0" max="32767" attributes="0"/>
+                                      <Component id="txtDuration" alignment="0" max="32767" attributes="0"/>
+                                      <Component id="txtTaskID" alignment="0" max="32767" attributes="0"/>
                                       <Component id="jTextField7" max="32767" attributes="0"/>
-                                      <Component id="jTextField5" alignment="0" max="32767" attributes="0"/>
-                                      <Component id="jTextField3" alignment="0" max="32767" attributes="0"/>
+                                      <Component id="txtDescription" alignment="0" max="32767" attributes="0"/>
+                                      <Component id="txtTaskName" alignment="0" max="32767" attributes="0"/>
                                       <Group type="102" attributes="0">
                                           <Group type="103" groupAlignment="0" attributes="0">
                                               <Group type="102" alignment="0" attributes="0">
-                                                  <Component id="jComboBox12" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="cmbStartDay" min="-2" max="-2" attributes="0"/>
                                                   <EmptySpace max="-2" attributes="0"/>
                                                   <Component id="jLabel13" min="-2" max="-2" attributes="0"/>
                                                   <EmptySpace max="-2" attributes="0"/>
-                                                  <Component id="jComboBox11" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="cmbStartMonth" min="-2" max="-2" attributes="0"/>
                                                   <EmptySpace max="-2" attributes="0"/>
                                                   <Component id="jLabel14" min="-2" max="-2" attributes="0"/>
                                                   <EmptySpace max="-2" attributes="0"/>
-                                                  <Component id="jComboBox8" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="cmbStartYear" min="-2" max="-2" attributes="0"/>
                                               </Group>
                                               <Group type="102" alignment="0" attributes="0">
-                                                  <Component id="jComboBox13" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="cmbEndDay" min="-2" max="-2" attributes="0"/>
                                                   <EmptySpace max="-2" attributes="0"/>
                                                   <Component id="jLabel12" min="-2" max="-2" attributes="0"/>
                                                   <EmptySpace max="-2" attributes="0"/>
-                                                  <Component id="jComboBox10" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="cmbEndMonth" min="-2" max="-2" attributes="0"/>
                                                   <EmptySpace max="-2" attributes="0"/>
                                                   <Component id="jLabel15" min="-2" max="-2" attributes="0"/>
                                                   <EmptySpace max="-2" attributes="0"/>
-                                                  <Component id="jComboBox9" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="cmbEndYear" min="-2" max="-2" attributes="0"/>
                                               </Group>
-                                              <Component id="jComboBox14" alignment="0" min="-2" max="-2" attributes="0"/>
+                                              <Component id="cmbColour" alignment="0" min="-2" max="-2" attributes="0"/>
                                           </Group>
                                           <EmptySpace min="0" pref="13" max="32767" attributes="0"/>
                                       </Group>
                                       <Group type="102" attributes="0">
                                           <Group type="103" groupAlignment="0" attributes="0">
-                                              <Component id="jButton6" linkSize="40" min="-2" pref="99" max="-2" attributes="0"/>
-                                              <Component id="jButton10" linkSize="40" min="-2" pref="99" max="-2" attributes="0"/>
+                                              <Component id="btnClear" linkSize="40" min="-2" pref="99" max="-2" attributes="0"/>
+                                              <Component id="btnRestart" linkSize="40" min="-2" pref="99" max="-2" attributes="0"/>
                                           </Group>
                                           <EmptySpace max="32767" attributes="0"/>
                                           <Group type="103" groupAlignment="0" attributes="0">
-                                              <Component id="jButton5" linkSize="40" alignment="1" min="-2" pref="99" max="-2" attributes="0"/>
-                                              <Component id="jButton9" linkSize="40" alignment="1" min="-2" pref="99" max="-2" attributes="0"/>
+                                              <Component id="btnAddTask" linkSize="40" alignment="1" min="-2" pref="99" max="-2" attributes="0"/>
+                                              <Component id="btnEditTask" linkSize="40" alignment="1" min="-2" pref="99" max="-2" attributes="0"/>
                                           </Group>
                                       </Group>
                                   </Group>
@@ -254,31 +240,31 @@
                               <Group type="102" alignment="0" attributes="0">
                                   <Group type="103" groupAlignment="3" attributes="0">
                                       <Component id="jLabel19" linkSize="11" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jTextField4" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="txtTaskID" alignment="3" min="-2" max="-2" attributes="0"/>
                                       <Component id="jLabel2" alignment="3" min="-2" max="-2" attributes="0"/>
                                   </Group>
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="3" attributes="0">
                                       <Component id="jLabel10" linkSize="11" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jTextField3" linkSize="9" alignment="3" min="-2" pref="14" max="-2" attributes="0"/>
+                                      <Component id="txtTaskName" linkSize="9" alignment="3" min="-2" pref="14" max="-2" attributes="0"/>
                                       <Component id="jLabel4" alignment="3" min="-2" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
                               <Group type="102" alignment="0" attributes="0">
                                   <EmptySpace min="-2" pref="64" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="3" attributes="0">
-                                      <Component id="jComboBox12" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jComboBox11" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jComboBox8" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="cmbStartDay" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="cmbStartMonth" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="cmbStartYear" alignment="3" min="-2" max="-2" attributes="0"/>
                                       <Component id="jLabel13" alignment="3" min="-2" max="-2" attributes="0"/>
                                       <Component id="jLabel14" alignment="3" min="-2" max="-2" attributes="0"/>
                                       <Component id="jLabel17" linkSize="11" alignment="3" min="-2" max="-2" attributes="0"/>
                                   </Group>
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="3" attributes="0">
-                                      <Component id="jComboBox13" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jComboBox10" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jComboBox9" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="cmbEndDay" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="cmbEndMonth" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="cmbEndYear" alignment="3" min="-2" max="-2" attributes="0"/>
                                       <Component id="jLabel12" alignment="3" min="-2" max="-2" attributes="0"/>
                                       <Component id="jLabel15" alignment="3" min="-2" max="-2" attributes="0"/>
                                       <Component id="jLabel16" linkSize="11" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -287,19 +273,19 @@
                           </Group>
                           <EmptySpace max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="jTextField6" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="txtDuration" alignment="3" min="-2" max="-2" attributes="0"/>
                               <Component id="jLabel20" linkSize="11" alignment="3" min="-2" max="-2" attributes="0"/>
                               <Component id="jLabel5" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="jTextField5" linkSize="9" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="txtDescription" linkSize="9" alignment="3" min="-2" max="-2" attributes="0"/>
                               <Component id="jLabel18" linkSize="11" alignment="3" min="-2" max="-2" attributes="0"/>
                               <Component id="jLabel6" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="jComboBox14" alignment="3" max="32767" attributes="0"/>
+                              <Component id="cmbColour" alignment="3" max="32767" attributes="0"/>
                               <Component id="jLabel11" linkSize="11" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace max="-2" attributes="0"/>
@@ -311,16 +297,16 @@
                           <EmptySpace max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" attributes="0">
-                                  <Component id="jButton6" linkSize="38" min="-2" max="-2" attributes="0"/>
+                                  <Component id="btnClear" linkSize="38" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Component id="jSeparator1" min="-2" pref="2" max="-2" attributes="0"/>
                                   <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
-                                  <Component id="jButton10" linkSize="38" min="-2" max="-2" attributes="0"/>
+                                  <Component id="btnRestart" linkSize="38" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <Group type="102" attributes="0">
-                                  <Component id="jButton5" linkSize="38" min="-2" max="-2" attributes="0"/>
+                                  <Component id="btnAddTask" linkSize="38" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace min="26" pref="26" max="-2" attributes="0"/>
-                                  <Component id="jButton9" linkSize="38" min="-2" max="-2" attributes="0"/>
+                                  <Component id="btnEditTask" linkSize="38" min="-2" max="-2" attributes="0"/>
                               </Group>
                           </Group>
                           <EmptySpace min="-2" pref="17" max="-2" attributes="0"/>
@@ -350,7 +336,7 @@
                     <Property name="text" type="java.lang.String" value="Task Name:"/>
                   </Properties>
                 </Component>
-                <Component class="javax.swing.JTextField" name="jTextField3">
+                <Component class="javax.swing.JTextField" name="txtTaskName">
                   <Properties>
                     <Property name="toolTipText" type="java.lang.String" value="Input an appropriate name for the task."/>
                   </Properties>
@@ -375,7 +361,7 @@
                     <Property name="text" type="java.lang.String" value="/"/>
                   </Properties>
                 </Component>
-                <Component class="javax.swing.JComboBox" name="jComboBox8">
+                <Component class="javax.swing.JComboBox" name="cmbStartYear">
                   <Properties>
                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                       <Font name="Tahoma" size="11" style="1"/>
@@ -488,10 +474,10 @@
                     </Property>
                   </Properties>
                   <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jComboBox8ActionPerformed"/>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cmbStartYearActionPerformed"/>
                   </Events>
                 </Component>
-                <Component class="javax.swing.JComboBox" name="jComboBox9">
+                <Component class="javax.swing.JComboBox" name="cmbEndYear">
                   <Properties>
                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                       <Font name="Tahoma" size="11" style="1"/>
@@ -604,10 +590,10 @@
                     </Property>
                   </Properties>
                   <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jComboBox9ActionPerformed"/>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cmbEndYearActionPerformed"/>
                   </Events>
                 </Component>
-                <Component class="javax.swing.JComboBox" name="jComboBox10">
+                <Component class="javax.swing.JComboBox" name="cmbEndMonth">
                   <Properties>
                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                       <Font name="Tahoma" size="11" style="1"/>
@@ -630,10 +616,10 @@
                     </Property>
                   </Properties>
                   <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jComboBox10ActionPerformed"/>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cmbEndMonthActionPerformed"/>
                   </Events>
                 </Component>
-                <Component class="javax.swing.JComboBox" name="jComboBox11">
+                <Component class="javax.swing.JComboBox" name="cmbStartMonth">
                   <Properties>
                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                       <Font name="Tahoma" size="11" style="1"/>
@@ -656,10 +642,10 @@
                     </Property>
                   </Properties>
                   <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jComboBox11ActionPerformed"/>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cmbStartMonthActionPerformed"/>
                   </Events>
                 </Component>
-                <Component class="javax.swing.JComboBox" name="jComboBox12">
+                <Component class="javax.swing.JComboBox" name="cmbStartDay">
                   <Properties>
                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                       <Font name="Tahoma" size="11" style="1"/>
@@ -702,10 +688,10 @@
                     </Property>
                   </Properties>
                   <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jComboBox12ActionPerformed"/>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cmbStartDayActionPerformed"/>
                   </Events>
                 </Component>
-                <Component class="javax.swing.JComboBox" name="jComboBox13">
+                <Component class="javax.swing.JComboBox" name="cmbEndDay">
                   <Properties>
                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                       <Font name="Tahoma" size="11" style="1"/>
@@ -748,7 +734,7 @@
                     </Property>
                   </Properties>
                   <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jComboBox13ActionPerformed"/>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cmbEndDayActionPerformed"/>
                   </Events>
                 </Component>
                 <Component class="javax.swing.JLabel" name="jLabel16">
@@ -766,7 +752,7 @@
                     <Property name="text" type="java.lang.String" value="Description:"/>
                   </Properties>
                 </Component>
-                <Component class="javax.swing.JTextField" name="jTextField5">
+                <Component class="javax.swing.JTextField" name="txtDescription">
                   <Properties>
                     <Property name="toolTipText" type="java.lang.String" value="Input a brief description of the task."/>
                   </Properties>
@@ -776,7 +762,7 @@
                     <Property name="text" type="java.lang.String" value="Colour:"/>
                   </Properties>
                 </Component>
-                <Component class="javax.swing.JComboBox" name="jComboBox14">
+                <Component class="javax.swing.JComboBox" name="cmbColour">
                   <Properties>
                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                       <Font name="Tahoma" size="11" style="1"/>
@@ -797,15 +783,15 @@
                     </Property>
                   </Properties>
                 </Component>
-                <Component class="javax.swing.JButton" name="jButton5">
+                <Component class="javax.swing.JButton" name="btnAddTask">
                   <Properties>
                     <Property name="text" type="java.lang.String" value="Add Task"/>
                   </Properties>
                   <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton5ActionPerformed"/>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnAddTaskActionPerformed"/>
                   </Events>
                 </Component>
-                <Component class="javax.swing.JButton" name="jButton6">
+                <Component class="javax.swing.JButton" name="btnClear">
                   <Properties>
                     <Property name="text" type="java.lang.String" value="Clear"/>
                   </Properties>
@@ -815,7 +801,7 @@
                     <Property name="text" type="java.lang.String" value="Task ID:"/>
                   </Properties>
                 </Component>
-                <Component class="javax.swing.JTextField" name="jTextField4">
+                <Component class="javax.swing.JTextField" name="txtTaskID">
                   <Properties>
                     <Property name="toolTipText" type="java.lang.String" value="Enter a positive number. An integer (e.g. 1) is a main task. Adding a decimal place followed by another number will set this task as a sub-task. For example, task 1.2 is a sub-task of task 1, and task 1.1.2 is a sub-task of task 1.1"/>
                   </Properties>
@@ -825,7 +811,7 @@
                     <Property name="text" type="java.lang.String" value="Duration (days):"/>
                   </Properties>
                 </Component>
-                <Component class="javax.swing.JTextField" name="jTextField6">
+                <Component class="javax.swing.JTextField" name="txtDuration">
                   <Properties>
                     <Property name="toolTipText" type="java.lang.String" value="The estimated length of the task in days. Input an integer between 1 and 36525."/>
                   </Properties>
@@ -880,12 +866,12 @@
                     <Property name="text" type="java.lang.String" value="E.g. 1.1.1, 1.1.2"/>
                   </Properties>
                 </Component>
-                <Component class="javax.swing.JButton" name="jButton9">
+                <Component class="javax.swing.JButton" name="btnEditTask">
                   <Properties>
                     <Property name="text" type="java.lang.String" value="Edit Tasks"/>
                   </Properties>
                 </Component>
-                <Component class="javax.swing.JButton" name="jButton10">
+                <Component class="javax.swing.JButton" name="btnRestart">
                   <Properties>
                     <Property name="text" type="java.lang.String" value="Restart"/>
                   </Properties>
@@ -901,7 +887,7 @@
                 <Property name="text" type="java.lang.String" value="Chart Type:"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JComboBox" name="jComboBox15">
+            <Component class="javax.swing.JComboBox" name="cmbChartType">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Tahoma" size="11" style="1"/>
@@ -918,11 +904,6 @@
             </Component>
           </SubComponents>
         </Container>
-        <Component class="javax.swing.JLabel" name="jLabel3">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="jLabel3"/>
-          </Properties>
-        </Component>
       </SubComponents>
     </Container>
     <Container class="javax.swing.JPanel" name="jPanel3">
@@ -938,7 +919,7 @@
         <DimensionLayout dim="0">
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="1" attributes="0">
-                  <EmptySpace max="32767" attributes="0"/>
+                  <EmptySpace pref="156" max="32767" attributes="0"/>
                   <Component id="label2" min="-2" max="-2" attributes="0"/>
                   <EmptySpace min="-2" pref="150" max="-2" attributes="0"/>
               </Group>
