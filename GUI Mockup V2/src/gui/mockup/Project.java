@@ -23,10 +23,12 @@ public class Project {
     private WBT wbt;
     private Pertt pertt;
     private Gantt gantt;
+    private int minDuration;
+    
     
     public Project(Task task)
     {
-        primaryTask = task;
+        setPrimaryTask(task);
     }
     
     public void createWBT()
@@ -49,6 +51,11 @@ public class Project {
         return wbt;
     }
     
+    public Pertt getPertt()
+    {
+        return pertt;
+    }
+    
     public Task getPrimaryTask()
     {
         return primaryTask;
@@ -61,7 +68,12 @@ public class Project {
     
     public int getMinDuration()
     {
-        return 4; //TEMPORARY
+        minDuration = 0;
+        for (Task task : getWBT().getLeaves(primaryTask))
+        {
+            minDuration = minDuration + task.getMinDiration();
+        }
+        return minDuration;
     }
     
     private void setPrimaryTask(Task task)
@@ -69,11 +81,14 @@ public class Project {
         primaryTask = task;
     }
     
-    private void setProjectName(String name)
+    public void setProjectName(String name)
     {
-    
-    
+        projectName = name;
     }
     
+    public void setTotalDuration(int duration)
+    {
+        totalDuration = duration;
+    }
     
 }

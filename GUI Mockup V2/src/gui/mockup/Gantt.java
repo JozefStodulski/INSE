@@ -7,8 +7,11 @@ package gui.mockup;
 
 /**
  *
- * @author Samsung
+ * @author Us
  */
 public class Gantt {
-    
+    Gantt()
+    {
+        
+    }
 }

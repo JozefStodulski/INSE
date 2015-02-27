@@ -74,7 +74,7 @@ public class Task {
     
     public int getMinDiration()
     {
-        return 4; //TEMPORARY
+        return duration;
     }
     
     public int getWidth()

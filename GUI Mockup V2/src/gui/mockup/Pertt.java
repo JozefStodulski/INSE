@@ -9,11 +9,11 @@ import gui.mockup.ProjectPlanner;
 
 /**
  *
- * @author Samsung
+ * @author Us
  */
 public class Pertt {
     public int getFloatTime()
     {
-        return ProjectPlanner.getOpenProject().getTotalDuration() -ProjectPlanner.getOpenProject().getMinDuration();
+        return ProjectPlanner.getOpenProject().getTotalDuration() - ProjectPlanner.getOpenProject().getMinDuration();
     }
 }
