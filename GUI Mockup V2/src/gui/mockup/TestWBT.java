@@ -45,8 +45,10 @@ public class TestWBT {
         
         testProj.createWBT();
         
+        System.out.println("Expecting 't name[3,4,5,6]' ");
+        
         for (Task task : testProj.getWBT().getLeaves(testProj.getPrimaryTask()))
-        {
+        {           
             System.out.println(task.getName());
         }
     }
