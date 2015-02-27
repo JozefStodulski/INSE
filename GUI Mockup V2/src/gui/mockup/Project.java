@@ -29,11 +29,6 @@ public class Project {
         primaryTask = task;
     }
     
-    public void saveProject()
-    {
-        // Send all project variables to database
-    }
-    
     public void createWBT()
     {
         wbt = new WBT();

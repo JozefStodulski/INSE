@@ -30,6 +30,11 @@ public class ProjectPlanner {
         // openProject = new Project();     // get variables from database
     }
     
+    public void saveProject()
+    {
+        // Send all project variables to database
+    }
+    
     public static Project getOpenProject()
     {
         return openProject;
