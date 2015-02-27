@@ -4,8 +4,8 @@
  * and open the template in the editor.
  */
 package gui.mockup;
-import gui.mockup.Pert;
-import gui.mockup.Ganntt;
+import gui.mockup.Pertt;
+import gui.mockup.Gantt;
 import java.util.Date;
 import gui.mockup.Task;
 import gui.mockup.WBT;
@@ -21,12 +21,17 @@ public class Project {
     private Date completionDate;
     private Task primaryTask;
     private WBT wbt;
-    private Pert pert; //Pertt.class needs to be changed to PERT
-    private Ganntt gantt; //Ganntt.class needs to be Gantt
+    private Pertt pertt;
+    private Gantt gantt;
     
     public Project(Task task)
     {
         primaryTask = task;
+    }
+    
+    public void saveProject()
+    {
+        // Send all project variables to database
     }
     
     public void createWBT()
@@ -36,12 +41,12 @@ public class Project {
     
     public void createPert()
     {
-        pert = new Pert();
+        pertt = new Pertt();
     }
     
     public void createGantt()
     {
-        gantt = new Ganntt();
+        gantt = new Gantt();
     }
     
     public WBT getWBT()

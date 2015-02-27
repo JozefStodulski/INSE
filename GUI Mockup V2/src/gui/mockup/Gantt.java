@@ -5,15 +5,10 @@
  */
 package gui.mockup;
 
-import gui.mockup.ProjectPlanner;
-
 /**
  *
  * @author Samsung
  */
-public class Pert {
-    public int getFloatTime()
-    {
-        return ProjectPlanner.getOpenProject().getTotalDuration() -ProjectPlanner.getOpenProject().getMinDuration();
-    }
+public class Gantt {
+    
 }
