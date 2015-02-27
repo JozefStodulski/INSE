@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 package gui.mockup;
-import gui.mockup.Task;
+// import gui.mockup.Task;  // needed?
 import java.util.*;
 
 /**
@@ -15,7 +15,9 @@ public class WBT {
     private List<Task> leaves;
     
     public WBT()
-    {}
+    {
+        leaves = new ArrayList<>();
+    }
     
     /**
      * @return leaves       All the micro-tasks at the bottom of the WBT
