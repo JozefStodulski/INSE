@@ -36,6 +36,8 @@ public class TestPertt {
         testProj = new Project(testPrimeTask);
         testProj.setTotalDuration(50);
         
+        ProjectPlanner.setOpenProject(testProj);
+        
         testPrimeTask.addSubtask(testTask1);
         testPrimeTask.addSubtask(testTask2);
         testTask1.addSubtask(testTask3);
@@ -43,10 +45,10 @@ public class TestPertt {
         testTask2.addSubtask(testTask5);
         testTask2.addSubtask(testTask6);
         
+        testProj.createPertt();
         testProj.createWBT();
         
         System.out.println("Expecting '30' ");
-        
         System.out.println(testProj.getPertt().getFloatTime());
     }
     

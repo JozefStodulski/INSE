@@ -36,7 +36,7 @@ public class Project {
         wbt = new WBT();
     }
     
-    public void createPert()
+    public void createPertt()
     {
         pertt = new Pertt();
     }
@@ -69,7 +69,7 @@ public class Project {
     public int getMinDuration()
     {
         minDuration = 0;
-        for (Task task : getWBT().getLeaves(primaryTask))
+        for (Task task : ProjectPlanner.getOpenProject().getWBT().getLeaves(primaryTask))
         {
             minDuration = minDuration + task.getMinDiration();
         }

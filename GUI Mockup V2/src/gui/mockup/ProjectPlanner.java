@@ -25,6 +25,11 @@ public class ProjectPlanner {
         
     }
     
+    public static void setOpenProject(Project project)
+    {
+        openProject = project;
+    }
+    
     public void loadProject()
     {
         // openProject = new Project();     // get variables from database
