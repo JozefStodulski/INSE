@@ -412,7 +412,7 @@ public class GUI extends javax.swing.JFrame {
         description = txtDescription.getText();
         colour = null;
         dependencies = jTextField7.getText();
-        String sql = "INSERT INTO PMdata(taskName,duration,description,colour,dependencies,esd,eed)";
+        JavaSQL.insertDB(taskName,duration,description,colour,dependencies,esd,eed);
     }//GEN-LAST:event_btnAddTaskActionPerformed
 
     private void txtTaskName2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtTaskName2ActionPerformed

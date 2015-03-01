@@ -23,4 +23,7 @@ public class JavaSQL {
             e.printStackTrace();
         }
     }
+    public static void insertDB(String taskName,int duration,String description,String colour,String dependencies,String esd,String eed){
+       String sql = "INSERT INTO PMdata(taskName,duration,description,colour,dependencies,esd,eed,null,null,null)";
+    }
 }
