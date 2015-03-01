@@ -45,11 +45,11 @@ public class TestPertt {
         testTask2.addSubtask(testTask5);
         testTask2.addSubtask(testTask6);
         
-        testProj.createPertt();
+        testProj.createPert();
         testProj.createWBT();
         
         System.out.println("Expecting '30' ");
-        System.out.println(testProj.getPertt().getFloatTime());
+        System.out.println(testProj.getPert().getFloatTime());
     }
     
 }

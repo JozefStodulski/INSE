@@ -36,7 +36,7 @@ public class Project {
         wbt = new WBT();
     }
     
-    public void createPertt()
+    public void createPert()
     {
         pert = new Pert();
     }
@@ -51,7 +51,7 @@ public class Project {
         return wbt;
     }
     
-    public Pert getPertt()
+    public Pert getPert()
     {
         return pert;
     }
