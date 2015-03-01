@@ -11,7 +11,7 @@ import gui.mockup.ProjectPlanner;
  *
  * @author Us
  */
-public class Pertt {
+public class Pert {
     public int getFloatTime()
     {
         return ProjectPlanner.getOpenProject().getTotalDuration() - ProjectPlanner.getOpenProject().getMinDuration();

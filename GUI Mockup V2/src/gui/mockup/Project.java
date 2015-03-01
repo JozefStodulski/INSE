@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 package gui.mockup;
-import gui.mockup.Pertt;
+import gui.mockup.Pert;
 import gui.mockup.Gantt;
 import java.util.Date;
 import gui.mockup.Task;
@@ -21,7 +21,7 @@ public class Project {
     private Date completionDate;
     private Task primaryTask;
     private WBT wbt;
-    private Pertt pertt;
+    private Pert pert;
     private Gantt gantt;
     private int minDuration;
     
@@ -38,7 +38,7 @@ public class Project {
     
     public void createPertt()
     {
-        pertt = new Pertt();
+        pert = new Pert();
     }
     
     public void createGantt()
@@ -51,9 +51,9 @@ public class Project {
         return wbt;
     }
     
-    public Pertt getPertt()
+    public Pert getPertt()
     {
-        return pertt;
+        return pert;
     }
     
     public Task getPrimaryTask()
