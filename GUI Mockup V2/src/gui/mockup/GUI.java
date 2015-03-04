@@ -453,14 +453,105 @@ public class GUI extends javax.swing.JFrame {
     }//GEN-LAST:event_txtesDDActionPerformed
 
     private void btnAddTaskActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAddTaskActionPerformed
-        taskName = txtTaskName.getText();
-        esd = txtesDD.getText();
-        eed = txteeDD.getText();
+        try {
+        if (txtTaskName.getText().equals("")){
+            JOptionPane.showMessageDialog(null, "Task Name is empty", "Error", JOptionPane.WARNING_MESSAGE);
+            return;
+        }
+            else {
+            taskName = txtTaskName.getText();
+        }
+       
+        if (txtesDD.getText().equals("")){
+            JOptionPane.showMessageDialog(null, "Earliest start day is empty", "Error", JOptionPane.WARNING_MESSAGE);
+            return;
+        }
+            else {
+            rangecheck = Integer.parseInt(txtesDD.getText());
+            if (rangecheck>0 & rangecheck<32) {
+                esDD = rangecheck;
+            }
+        }
+        if (txtesMM.getText().equals("")){
+            JOptionPane.showMessageDialog(null, "Earliest start month is empty", "Error", JOptionPane.WARNING_MESSAGE);
+            return;
+        }
+            else {
+            rangecheck = Integer.parseInt(txtesMM.getText());
+            if (rangecheck>0 & rangecheck<13) {
+                esMM= rangecheck;
+            }
+        }
+        if (txtesYYYY.getText().equals("")){
+            JOptionPane.showMessageDialog(null, "Earliest start year is empty", "Error", JOptionPane.WARNING_MESSAGE);
+            return;
+        }
+            else {
+            rangecheck = Integer.parseInt(txtesYYYY.getText());
+            if (rangecheck>2015 & rangecheck<9999) {
+                esYYYY = rangecheck;
+            }
+        }
+        if (txteeDD.getText().equals("")){
+            JOptionPane.showMessageDialog(null, "Earliest end day is empty", "Error", JOptionPane.WARNING_MESSAGE);
+            return;
+        }
+            else {
+            rangecheck = Integer.parseInt(txteeDD.getText());
+            if (rangecheck>0 & rangecheck<32) {
+                eeDD = rangecheck;
+            }
+        }
+                if (txteeMM.getText().equals("")){
+            JOptionPane.showMessageDialog(null, "Earliest end month is empty", "Error", JOptionPane.WARNING_MESSAGE);
+            return;
+        }
+            else {
+            rangecheck = Integer.parseInt(txteeMM.getText());
+            if (rangecheck>0 & rangecheck<13) {
+                eeMM = rangecheck;
+            }
+        }
+                 if (txteeYYYY.getText().equals("")){
+            JOptionPane.showMessageDialog(null, "Earliest end year is empty", "Error", JOptionPane.WARNING_MESSAGE);
+            return;
+        }
+            else {
+            rangecheck = Integer.parseInt(txteeYYYY.getText());
+            if (rangecheck>2015 & rangecheck<9999) {
+                eeDD = rangecheck;
+            }
+        }       
+        ////////////////////////////////////////////////////////////////////////////
+        esd = ""+ esDD+"."+esMM+"."+esYYYY;
+        eed = ""+ eeDD+"."+eeMM+"."+eeYYYY;
         duration = (Integer.parseInt(txtDuration.getText()));
-        description = txtDescription.getText();
-        colour = null;
+        if (duration <= 0 ) {
+                JOptionPane.showMessageDialog(null, "duration of task too short", "Error", JOptionPane.WARNING_MESSAGE);
+                return;
+          
+            }
+         if (txtDescription.getText().equals("")){
+            JOptionPane.showMessageDialog(null, "Description is empty", "Error", JOptionPane.WARNING_MESSAGE);
+            return;
+        }
+            else {
+            description = txtDescription.getText();
+        }
+        if (cmbColour.getSelectedIndex()== 0){
+            JOptionPane.showMessageDialog(null, "Colour must be selected", "Error", JOptionPane.WARNING_MESSAGE);
+            return;
+        }
+        else {
+            colour = (String)cmbColour.getSelectedItem();
+        }  
         dependencies = jTextField7.getText();
-        JavaSQL.insertDB(taskName,duration,description,colour,dependencies,esd,eed);
+        }
+        catch (NumberFormatException exRef1) {
+            JOptionPane.showMessageDialog(null, "incorrect format of digits", "Error", JOptionPane.WARNING_MESSAGE);
+            
+        }
+       JavaSQL.insertDB(taskName,duration,description,colour,dependencies,esd,eed);
     }//GEN-LAST:event_btnAddTaskActionPerformed
 
     private void txteeDDActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txteeDDActionPerformed
