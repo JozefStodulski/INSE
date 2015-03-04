@@ -65,8 +65,12 @@ public class GUI extends javax.swing.JFrame {
         btnRestart = new javax.swing.JButton();
         jSeparator1 = new javax.swing.JSeparator();
         jSeparator3 = new javax.swing.JSeparator();
-        jTextField2 = new javax.swing.JTextField();
-        txtTaskName2 = new javax.swing.JTextField();
+        txtesDD = new javax.swing.JTextField();
+        txteeDD = new javax.swing.JTextField();
+        txtesMM = new javax.swing.JTextField();
+        txtesYYYY = new javax.swing.JTextField();
+        txteeMM = new javax.swing.JTextField();
+        txteeYYYY = new javax.swing.JTextField();
         jLabel8 = new javax.swing.JLabel();
         cmbChartType = new javax.swing.JComboBox();
         jPanel3 = new javax.swing.JPanel();
@@ -142,16 +146,40 @@ public class GUI extends javax.swing.JFrame {
 
         btnRestart.setText("Restart");
 
-        jTextField2.addActionListener(new java.awt.event.ActionListener() {
+        txtesDD.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField2ActionPerformed(evt);
+                txtesDDActionPerformed(evt);
             }
         });
 
-        txtTaskName2.setToolTipText("Input an appropriate name for the task.");
-        txtTaskName2.addActionListener(new java.awt.event.ActionListener() {
+        txteeDD.setToolTipText("Input an appropriate name for the task.");
+        txteeDD.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtTaskName2ActionPerformed(evt);
+                txteeDDActionPerformed(evt);
+            }
+        });
+
+        txtesMM.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtesMMActionPerformed(evt);
+            }
+        });
+
+        txtesYYYY.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtesYYYYActionPerformed(evt);
+            }
+        });
+
+        txteeMM.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txteeMMActionPerformed(evt);
+            }
+        });
+
+        txteeYYYY.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txteeYYYYActionPerformed(evt);
             }
         });
 
@@ -181,19 +209,32 @@ public class GUI extends javax.swing.JFrame {
                             .addComponent(txtDescription)
                             .addComponent(txtTaskName)
                             .addGroup(jPanel6Layout.createSequentialGroup()
-                                .addComponent(cmbColour, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(0, 76, Short.MAX_VALUE))
-                            .addGroup(jPanel6Layout.createSequentialGroup()
                                 .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(btnClear, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(btnRestart, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 27, Short.MAX_VALUE)
                                 .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(btnAddTask, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(btnEditTask, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                            .addComponent(txtTaskName2)
-                            .addComponent(txtDuration, javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jTextField2))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel6Layout.createSequentialGroup()
+                                .addComponent(txtDuration)
+                                .addGap(116, 116, 116))
+                            .addGroup(jPanel6Layout.createSequentialGroup()
+                                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(cmbColour, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGroup(jPanel6Layout.createSequentialGroup()
+                                        .addComponent(txtesDD, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(txtesMM, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(txtesYYYY, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGroup(jPanel6Layout.createSequentialGroup()
+                                        .addComponent(txteeDD, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(txteeMM, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(txteeYYYY, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addGap(0, 0, Short.MAX_VALUE)))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 113, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -217,18 +258,23 @@ public class GUI extends javax.swing.JFrame {
                         .addGap(64, 64, 64)
                         .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel17)
-                            .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(txtesDD, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(txtesMM, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(txtesYYYY, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel16)
-                            .addComponent(txtTaskName2, javax.swing.GroupLayout.PREFERRED_SIZE, 18, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(jLabel16))
                     .addGroup(jPanel6Layout.createSequentialGroup()
                         .addGap(20, 20, 20)
                         .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel10)
                             .addComponent(txtTaskName, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel4))))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(jLabel4))
+                        .addGap(55, 55, 55)
+                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(txteeDD, javax.swing.GroupLayout.PREFERRED_SIZE, 18, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(txteeMM, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(txteeYYYY, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 12, Short.MAX_VALUE)
                 .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(txtDuration, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel20)
@@ -273,7 +319,7 @@ public class GUI extends javax.swing.JFrame {
 
         jPanel6Layout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {btnAddTask, btnClear, btnEditTask, btnRestart});
 
-        jTextField2.getAccessibleContext().setAccessibleName("");
+        txtesDD.getAccessibleContext().setAccessibleName("");
 
         jLabel8.setText("Chart Type:");
 
@@ -402,14 +448,14 @@ public class GUI extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jTextField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField2ActionPerformed
+    private void txtesDDActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtesDDActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField2ActionPerformed
+    }//GEN-LAST:event_txtesDDActionPerformed
 
     private void btnAddTaskActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAddTaskActionPerformed
         taskName = txtTaskName.getText();
-        esd = jTextField2.getText();
-        eed = txtTaskName2.getText();
+        esd = txtesDD.getText();
+        eed = txteeDD.getText();
         duration = (Integer.parseInt(txtDuration.getText()));
         description = txtDescription.getText();
         colour = null;
@@ -417,9 +463,25 @@ public class GUI extends javax.swing.JFrame {
         JavaSQL.insertDB(taskName,duration,description,colour,dependencies,esd,eed);
     }//GEN-LAST:event_btnAddTaskActionPerformed
 
-    private void txtTaskName2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtTaskName2ActionPerformed
+    private void txteeDDActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txteeDDActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_txtTaskName2ActionPerformed
+    }//GEN-LAST:event_txteeDDActionPerformed
+
+    private void txtesMMActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtesMMActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtesMMActionPerformed
+
+    private void txtesYYYYActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtesYYYYActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtesYYYYActionPerformed
+
+    private void txteeMMActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txteeMMActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txteeMMActionPerformed
+
+    private void txteeYYYYActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txteeYYYYActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txteeYYYYActionPerformed
 
 
     
@@ -485,7 +547,6 @@ public class GUI extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel6;
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JSeparator jSeparator3;
-    private javax.swing.JTextField jTextField2;
     private javax.swing.JTextField jTextField7;
     private java.awt.Label label1;
     private java.awt.Label label2;
@@ -494,6 +555,11 @@ public class GUI extends javax.swing.JFrame {
     private javax.swing.JTextField txtDuration;
     private javax.swing.JTextField txtTaskName;
     private javax.swing.JTextField txtTaskName1;
-    private javax.swing.JTextField txtTaskName2;
+    private javax.swing.JTextField txteeDD;
+    private javax.swing.JTextField txteeMM;
+    private javax.swing.JTextField txteeYYYY;
+    private javax.swing.JTextField txtesDD;
+    private javax.swing.JTextField txtesMM;
+    private javax.swing.JTextField txtesYYYY;
     // End of variables declaration//GEN-END:variables
 }
