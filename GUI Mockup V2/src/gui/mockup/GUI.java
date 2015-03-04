@@ -19,6 +19,8 @@ public class GUI extends javax.swing.JFrame {
     private String description;
     private String colour;
     private String dependencies;
+    private int esDD,esMM,esYYYY,eeDD, eeMM,eeYYYY;
+    private int rangecheck;
     /**
      * Creates new form GUI
      */
